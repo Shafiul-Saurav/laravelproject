@@ -23,8 +23,8 @@ Route::get(sha1('/home'), function () {
 Route::get(sha1('/about'), function () {
     return view('about');
 })->name('about.us');
-Route::get(sha1('/contact'), function () {
-    return view('contact');
+Route::get('/contact/{id}', function ($id) {
+    return 'contact' . $id;
 })->name('contact_us');
 
 

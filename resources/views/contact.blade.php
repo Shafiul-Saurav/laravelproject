@@ -5,5 +5,6 @@
 @section('main_content')
  <div class="container">
     <h2>Contact page</h2>
+    {{-- {{ __($id) }} --}}
  </div>
 @endsection
